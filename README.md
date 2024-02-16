@@ -5,7 +5,7 @@ Hello! I am Adrián Jiménez and this is some information about me.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <a href="https://github.com/oakoudad/badge42">
-  <img src="https://badge.mediaplus.ma/greenbinary/adrijime?1337Badge=off&UM6P=off" alt="adrijime's 42 stats" />
+  <img src="https://badge.mediaplus.ma/greenbinary/adrijime?1337Badge=off&UM6P=off" alt="adrijime's 42 stats" width="350px" height="280px" alt="davifer2's 42 stats" align="right"/>
 </a>
   
 ```py
