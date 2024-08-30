@@ -5,8 +5,8 @@
 ```py
 const Adrián = {
   code: [Python, C, HTML, CSS, JavaScript, NodeJS, TypeScript],
-  tools: [Pandas, Angular],
-  challenge: "I am doing the course at 42 Barcelona"
+  tools: [Visual Studio Code, JetBrains, PyCharm, VIM],
+  challenge: "Studying software engineering at UOC"
 }
 ```
 ```py
