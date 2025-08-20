@@ -7,7 +7,7 @@
 
 - 🔭 I’m currently working on **my portfolio**
 
-- 🌱 I’m currently learning **Software engineering at UOC**
+- 🌱 I’m currently learning **Software engineering at UNIR**
 
 - 💬 Ask me about **python**
 
