@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0e75b6&height=220&section=header&text=Hi%20👋,%20I'm%20Adrián&fontSize=70&animation=fadeIn&fontAlignY=38&desc=Backend%20Developer%20from%20Spain&descAlignY=55&descAlign=50" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0e75b6&height=250&section=header&text=Hi%20👋,%20I'm%20Adrián&fontSize=70&animation=fadeIn&fontAlignY=30&desc=Software%20Engineer%20from%20Spain&descAlignY=55&descAlign=50" alt="Header" />
 
   <p>
     <img src="https://komarev.com/ghpvc/?username=madrix5&label=Profile%20views&color=0e75b6&style=for-the-badge" alt="madrix5" />
@@ -18,7 +18,7 @@
 
 - 🔭 I’m currently working on **my portfolio**.
 - 🌱 I’m currently learning **Software Engineering at UNIR**.
-- 🐍 Ask me about **Python & Backend Development**.
+- 🐍 Ask me about **Python & Software Engineering**.
 - 📫 How to reach me: **adrian.jimdev@gmail.com**
 
 <div align="center">
