@@ -74,18 +74,15 @@
 ### 📊 GitHub Stats
 
 <div align="center">
-  <table style="border: none; border-collapse: collapse;">
-    <tr>
-      <td style="border: none; padding-right: 10px; vertical-align: top;">
-        <img src="https://github-readme-stats.vercel.app/api?username=madrix5&show_icons=true&theme=dark&hide_border=true" alt="madrix5 stats" />
-      </td>
-      <td style="border: none; padding-left: 10px; vertical-align: top;">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=madrix5&layout=compact&theme=dark&hide_border=true" alt="madrix5 languages" />
-      </td>
-    </tr>
-  </table>
-  <br>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=madrix5&theme=dark&hide_border=true" alt="madrix5 streak" />
+  <p>
+    <img src="https://github-readme-stats.vercel.app/api?username=madrix5&show_icons=true&theme=dark&hide_border=true" alt="madrix5 stats" />
+  </p>
+  <p>
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=madrix5&layout=compact&theme=dark&hide_border=true" alt="madrix5 languages" />
+  </p>
+  <p>
+    <img src="https://streak-stats.demolab.com?user=madrix5&theme=dark&hide_border=true" alt="madrix5 streak" />
+  </p>
 </div>
 
 ---
