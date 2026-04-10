@@ -83,24 +83,4 @@ PRUEBAS
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=madrix5&theme=react&hide_border=true&background=0D1117&ring=0e75b6&fire=0e75b6&currStreakLabel=0e75b6" alt="Racha de commits de Adrián" />
 </div>
 
-### 📊 GitHub Analytics
-
-<div align="center">
-
-  <p>
-    <img src="https://img.shields.io/github/followers/madrix5?style=social&label=Followers" alt="Followers" />
-    <img src="https://img.shields.io/github/stars/madrix5?style=social&label=Stars" alt="Stars" />
-  </p>
-
-  <p>
-    <img src="https://github-readme-stats.vercel.app/api?username=madrix5&show_icons=true&locale=es&theme=react&hide_border=true&bg_color=0D1117&title_color=0e75b6&icon_color=0e75b6" alt="Estadísticas de GitHub de Adrián" height="150px"/>
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=madrix5&layout=compact&locale=es&theme=react&hide_border=true&bg_color=0D1117&title_color=0e75b6&icon_color=0e75b6" alt="Lenguajes más usados por Adrián" height="150px"/>
-  </p>
-
-  <p>
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=madrix5&theme=react-dark&hide_border=true&area=true&custom_title=Gráfico%20de%20Actividad" alt="Activity Graph" width="100%" />
-  </p>
-
-</div>
-
 <div align="center">
