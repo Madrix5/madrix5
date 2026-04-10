@@ -17,6 +17,15 @@
 - 🐍 Ask me about **Python & Computer Engineering**.
 - 📫 How to reach me: **adrian.jimdev@gmail.com**
 
+### 🤝 Connect with me
+
+<p>
+<a href="https://linkedin.com/in/adrian5j" target="blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://dev.to/madrix5" target="blank"><img src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" /></a>
+<a href="https://www.hackerrank.com/adrian_jimdev" target="blank"><img src="https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white" /></a>
+</p>
+
+</div>
 <div align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" alt="Dev Quote" />
 </div>
@@ -64,10 +73,6 @@
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=madrix5&theme=react-dark&hide_border=true&area=true" alt="Activity Graph" width="100%" />
   </p>
 
-  <p>
-    <img src="https://metrics.lecoq.io/madrix5?template=classic&base=header,activity,community,repositories,metadata&config.timezone=Europe%2FMadrid&config.twemoji=true" alt="Metrics" width="100%" />
-  </p>
-
 </div>
 
 ---
@@ -81,13 +86,3 @@
 ---
 
 <div align="center">
-
-### 🤝 Connect with me
-
-<p>
-<a href="https://linkedin.com/in/adrian5j" target="blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="https://dev.to/madrix5" target="blank"><img src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" /></a>
-<a href="https://www.hackerrank.com/adrian_jimdev" target="blank"><img src="https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white" /></a>
-</p>
-
-</div>
