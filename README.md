@@ -42,9 +42,14 @@
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
 </p>
 
-#### 🔧 Herramientas & IDEs
-  [![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm,react,nodejs,python,git)](https://skillicons.dev)
+#### 🧑🏻‍💻 FrontEnd
+  [![My Skills](https://skillicons.dev/icons?i=html,css,js,nodejs)](https://skillicons.dev)
 
+#### 🔧 BackEnd
+  [![My Skills](https://skillicons.dev/icons?i=python,c,nodejs)](https://skillicons.dev)
+
+#### IDE & Extras
+  [![My Skills](https://skillicons.dev/icons?i=vscode,git,github,gitkraken)](https://skillicons.dev)
 </div>
 
 ---
