@@ -36,20 +36,14 @@
 
 <div align="center">
 
-#### 💻 Lenguajes
-<p>
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-</p>
-
 #### 🧑🏻‍💻 FrontEnd
-  [![My Skills](https://skillicons.dev/icons?i=html,css,js,nodejs)](https://skillicons.dev)
+  [![My Skills](https://skillicons.dev/icons?i=html,css,js,nodejs,markdown)](https://skillicons.dev)
 
 #### 🔧 BackEnd
-  [![My Skills](https://skillicons.dev/icons?i=python,c,nodejs)](https://skillicons.dev)
+  [![My Skills](https://skillicons.dev/icons?i=python,c,nodejs,makefile)](https://skillicons.dev)
 
 #### IDE & Extras
-  [![My Skills](https://skillicons.dev/icons?i=vscode,git,github,gitkraken)](https://skillicons.dev)
+  [![My Skills](https://skillicons.dev/icons?i=vscode,git,github)](https://skillicons.dev)
 </div>
 
 ---
