@@ -5,10 +5,6 @@
   <p>
     <img src="https://komarev.com/ghpvc/?username=madrix5&label=Profile%20views&color=0e75b6&style=for-the-badge" alt="madrix5" />
   </p>
-  
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=madrix5&theme=flat&no-frame=true&no-bg=true&margin-w=4" alt="madrix5" />
-  </a>
 
 </div>
 
@@ -17,7 +13,7 @@
 ### 👨‍💻 About Me
 
 - 🔭 I’m currently working on **my portfolio**.
-- 🌱 I’m currently learning **Computer Engineering at UNIR**.
+- 🌱 I’m currently learning **Computer Engineering at UNIR, web programming and IA**.
 - 🐍 Ask me about **Python & Computer Engineering**.
 - 📫 How to reach me: **adrian.jimdev@gmail.com**
 
