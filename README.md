@@ -40,7 +40,7 @@
   [![My Skills](https://skillicons.dev/icons?i=html,css,js,markdown)](https://skillicons.dev)
 
 #### 🔧 BackEnd
-  [![My Skills](https://skillicons.dev/icons?i=python,c,nodejs,make)](https://skillicons.dev)
+  [![My Skills](https://skillicons.dev/icons?i=python,c,nodejs)](https://skillicons.dev)
 
 #### IDE & Extras
   [![My Skills](https://skillicons.dev/icons?i=vscode,git,github)](https://skillicons.dev)
