@@ -84,5 +84,5 @@
 | **[res_matrix](https://github.com/Madrix5/res_matrix)** | Resolución de matrices por el método de gauss con pivotaje parcial escalado. | <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" /> |
 
 ---
-
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm,react,nodejs,python,git)](https://skillicons.dev)
 <div align="center">
