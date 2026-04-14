@@ -53,7 +53,7 @@
 
 | 📂 Project | 📝 Description | 🛠️ Tech Stack |
 | :--- | :--- | :--- |
-| **[res_matrix](https://github.com/Madrix5/res_matrix)** | Resolución de matrices por el método de gauss con pivotaje parcial escalado. | ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) |
+| **[res_matrix](https://github.com/Madrix5/res_matrix)** | Resolución de matrices por el método de gauss con pivotaje parcial escalado. | ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![CLion](https://img.shields.io/badge/CLion-black?style=for-the-badge&logo=clion&logoColor=white)|
 | **[Conjetura_Collatz](https://github.com/Madrix5/Conjetura_Collatz)** | Resolución de matrices por el método de gauss con pivotaje parcial escalado. | ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) |
 
 ---
