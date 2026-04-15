@@ -3,7 +3,6 @@ import re
 import sys
 import os
 
-# --- CONFIGURACIÓN ---
 USERNAME = "Madrix5"
 TOPIC_TO_SHOW = "mostrar"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -18,49 +17,46 @@ TECH_BADGES = {
 }
 
 def update_readme():
-    print(f"🔍 Buscando repositorios para: {USERNAME}...")
+    # 1. Obtener datos de GitHub
+    print(f"🔍 Actualizando proyectos para {USERNAME}...")
     url = f"https://api.github.com/users/{USERNAME}/repos?per_page=100&sort=updated"
     response = requests.get(url)
-    
     if response.status_code != 200:
-        print(f"❌ ERROR API: {response.status_code}")
         sys.exit(1)
         
     repos = response.json()
     featured = [r for r in repos if TOPIC_TO_SHOW in (t.lower() for t in r.get('topics', []))]
     
-    table = "| 📂 Project | 📝 Description | 🛠️ Tech Stack |\n| :--- | :--- | :--- |\n"
+    # 2. Crear la tabla (Solo una vez)
+    table_content = "\n| 📂 Project | 📝 Description | 🛠️ Tech Stack |\n| :--- | :--- | :--- |\n"
+    
     if not featured:
-        table += "| --- | Todavía no hay proyectos con la etiqueta 'mostrar' | --- |\n"
+        table_content += "| --- | No hay proyectos con la etiqueta 'mostrar' | --- |\n"
     else:
         for r in featured:
-            name = r['name']
-            url = r['html_url']
-            desc = r['description'] or "Sin descripción."
-            topics = r.get('topics', [])
-            badges = [TECH_BADGES[t.lower()] for t in topics if t.lower() in TECH_BADGES]
+            badges = [TECH_BADGES[t.lower()] for t in r.get('topics', []) if t.lower() in TECH_BADGES]
             stack = " ".join(badges) if badges else "---"
-            table += f"| **[{name}]({url})** | {desc} | {stack} |\n"
+            table_content += f"| **[{r['name']}]({r['html_url']})** | {r['description'] or 'Sin descripción.'} | {stack} |\n"
 
-    # Leer el archivo
+    # 3. Leer README
     with open(README_PATH, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # DEFINIMOS EL PATRÓN ANTES DE USARLO (Aquí estaba el fallo)
+    # 4. Sustitución con Regex (Busca el bloque completo y lo reemplaza)
     pattern = r".*?"
-
-    if "" not in content:
-        print("❌ ERROR: No se encuentran las etiquetas en el README.")
+    replacement = f"{table_content}"
+    
+    if not re.search(pattern, content, flags=re.DOTALL):
+        print("❌ Error: No se encuentran las marcas de inicio/fin.")
         sys.exit(1)
 
-    # Reemplazar
-    replacement = f"\n{table}\n"
     new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
 
+    # 5. Guardar
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(new_content)
     
-    print("🎉 ¡Éxito! README actualizado.")
+    print("✅ ¡README saneado y actualizado!")
 
 if __name__ == "__main__":
     update_readme()
