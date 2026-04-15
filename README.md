@@ -53,6 +53,9 @@
 <!-- START_PROJECTS -->
 | 📂 Project | 📝 Description | 🛠️ Tech Stack |
 | :--- | :--- | :--- |
+| **[libft](https://github.com/Madrix5/libft)** | Creando una libreria en C con funcion de la libc. Me servirá para poder utilizar las funciones a lo largo del cursus. | ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) |
+| **[ft_printf](https://github.com/Madrix5/ft_printf)** | En construcción | ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) |
+| **[get_next_line](https://github.com/Madrix5/get_next_line)** | En construcción | ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) |
 | **[Conjetura_Collatz](https://github.com/Madrix5/Conjetura_Collatz)** | Pequeño programa para poner a prueba la conjetura de Collatz | ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) |
 | **[res_matrix](https://github.com/Madrix5/res_matrix)** | Programa en C que resuelve matrices por el método de eliminación de Gauss con pivotaje parcial escalado. | ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![CLion](https://img.shields.io/badge/CLion-black?style=for-the-badge&logo=clion&logoColor=white) |
 <!-- END_PROJECTS -->
