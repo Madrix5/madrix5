@@ -2,37 +2,36 @@ import requests
 import re
 import sys
 
-# 1. Configuración
 USERNAME = "Madrix5"
 TOPIC_TO_SHOW = "mostrar"
 README_PATH = "README.md"
 
+# Asegúrate de que estas etiquetas coinciden con tus "topics" en GitHub
 TECH_BADGES = {
     "c": "![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)",
     "clion": "![CLion](https://img.shields.io/badge/CLion-black?style=for-the-badge&logo=clion&logoColor=white)",
-    "javascript": "![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)",
-    "vsc": "![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)"
+    "python": "![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)"
 }
 
 def update_readme():
-    # Obtener repos
+    print(f"Buscando repositorios para el usuario: {USERNAME}...")
     url = f"https://api.github.com/users/{USERNAME}/repos?per_page=100"
     response = requests.get(url)
     
     if response.status_code != 200:
-        print(f"Error API: {response.status_code}")
+        print(f"Error en la API de GitHub: {response.status_code}")
         sys.exit(1)
         
     repos = response.json()
     featured = [r for r in repos if TOPIC_TO_SHOW in r.get('topics', [])]
     
+    print(f"Repositorios encontrados con la etiqueta '{TOPIC_TO_SHOW}': {len(featured)}")
+
+    table = "| 📂 Project | 📝 Description | 🛠️ Tech Stack |\n| :--- | :--- | :--- |\n"
+    
     if not featured:
-        print("No se encontraron repositorios con la etiqueta 'mostrar'")
-        # No salimos con error para que la Action no se ponga roja si simplemente no hay nada
-        table = "Todavía no hay proyectos destacados."
+        table += "| --- | Todavía no hay proyectos con la etiqueta 'mostrar' | --- |\n"
     else:
-        # Generar tabla
-        table = "| 📂 Project | 📝 Description | 🛠️ Tech Stack |\n| :--- | :--- | :--- |\n"
         for r in featured:
             name = r['name']
             url = r['html_url']
@@ -42,13 +41,16 @@ def update_readme():
             stack = " ".join(badges) if badges else "---"
             table += f"| **[{name}]({url})** | {desc} | {stack} |\n"
 
-    # Leer y actualizar README
+    # LEER README
     with open(README_PATH, "r", encoding="utf-8") as f:
         content = f.read()
 
+    # IMPORTANTE: Esta es la parte que suele fallar
     pattern = r".*?"
-    if not re.search(pattern, content, flags=re.DOTALL):
-        print("ERROR: No se han encontrado las marcas y ")
+    
+    if "" not in content:
+        print("ERROR CRÍTICO: No se encuentra la etiqueta en el README.md")
+        print(f"Contenido del README leído:\n{content}") # Esto nos dirá qué está viendo el script
         sys.exit(1)
 
     replacement = f"\n{table}\n"
@@ -56,7 +58,8 @@ def update_readme():
 
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(new_content)
-    print("README actualizado con éxito.")
+    
+    print("¡README actualizado con éxito!")
 
 if __name__ == "__main__":
     update_readme()
