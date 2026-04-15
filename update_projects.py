@@ -17,46 +17,51 @@ TECH_BADGES = {
 }
 
 def update_readme():
-    # 1. Obtener datos de GitHub
-    print(f"🔍 Actualizando proyectos para {USERNAME}...")
+    print("🔍 Obteniendo proyectos de la API...")
     url = f"https://api.github.com/users/{USERNAME}/repos?per_page=100&sort=updated"
-    response = requests.get(url)
-    if response.status_code != 200:
+    r_api = requests.get(url)
+    if r_api.status_code != 200:
         sys.exit(1)
         
-    repos = response.json()
+    repos = r_api.json()
     featured = [r for r in repos if TOPIC_TO_SHOW in (t.lower() for t in r.get('topics', []))]
     
-    # 2. Crear la tabla (Solo una vez)
-    table_content = "\n| 📂 Project | 📝 Description | 🛠️ Tech Stack |\n| :--- | :--- | :--- |\n"
-    
+    # Construimos la tabla
+    table = "\n| 📂 Project | 📝 Description | 🛠️ Tech Stack |\n| :--- | :--- | :--- |\n"
     if not featured:
-        table_content += "| --- | No hay proyectos con la etiqueta 'mostrar' | --- |\n"
+        table += "| --- | No hay proyectos con la etiqueta 'mostrar' | --- |\n"
     else:
         for r in featured:
             badges = [TECH_BADGES[t.lower()] for t in r.get('topics', []) if t.lower() in TECH_BADGES]
             stack = " ".join(badges) if badges else "---"
-            table_content += f"| **[{r['name']}]({r['html_url']})** | {r['description'] or 'Sin descripción.'} | {stack} |\n"
+            table += f"| **[{r['name']}]({r['html_url']})** | {r['description'] or 'Sin descripción.'} | {stack} |\n"
 
-    # 3. Leer README
-    with open(README_PATH, "r", encoding="utf-8") as f:
-        content = f.read()
-
-    # 4. Sustitución con Regex (Busca el bloque completo y lo reemplaza)
-    pattern = r".*?"
-    replacement = f"{table_content}"
-    
-    if not re.search(pattern, content, flags=re.DOTALL):
-        print("❌ Error: No se encuentran las marcas de inicio/fin.")
+    # LEER EL README COMPLETO
+    if not os.path.exists(README_PATH):
+        print("❌ El archivo README.md no existe.")
         sys.exit(1)
 
-    new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+    with open(README_PATH, "r", encoding="utf-8") as f:
+        full_content = f.read()
 
-    # 5. Guardar
-    with open(README_PATH, "w", encoding="utf-8") as f:
-        f.write(new_content)
+    # REEMPLAZO QUIRÚRGICO (Solo lo que hay entre las marcas)
+    start_tag = ""
+    end_tag = ""
     
-    print("✅ ¡README saneado y actualizado!")
+    if start_tag not in full_content or end_tag not in full_content:
+        print("❌ No se encontraron las marcas.")
+        sys.exit(1)
+
+    # Dividimos el archivo en 3 partes: antes de la marca, la tabla, y después de la marca
+    before = full_content.split(start_tag)[0]
+    after = full_content.split(end_tag)[1]
+    
+    new_readme = f"{before}{start_tag}{table}{end_tag}{after}"
+
+    with open(README_PATH, "w", encoding="utf-8") as f:
+        f.write(new_readme)
+    
+    print("✅ ¡README actualizado respetando tu contenido!")
 
 if __name__ == "__main__":
     update_readme()
