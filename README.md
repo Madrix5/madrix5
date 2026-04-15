@@ -51,6 +51,9 @@
 ### 🚀 Featured Projects
 
 <!-- START_PROJECTS -->
+| 📂 Project | 📝 Description | 🛠️ Tech Stack |
+| :--- | :--- | :--- |
+| **[res_matrix](https://github.com/Madrix5/res_matrix)** | Programa en C que resuelve matrices por el método de eliminación de Gauss con pivotaje parcial escalado. | ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![CLion](https://img.shields.io/badge/CLion-black?style=for-the-badge&logo=clion&logoColor=white) |
 <!-- END_PROJECTS -->
 
 
