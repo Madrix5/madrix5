@@ -50,6 +50,10 @@
 
 ### 🚀 Featured Projects
 
+<!-- START_PROJECTS -->
+<!-- END_PROJECTS -->
+
+
 ---
 
 ### 🔥 Racha de Contribuciones
