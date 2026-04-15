@@ -44,9 +44,8 @@ def update_readme():
     with open(README_PATH, "r", encoding="utf-8") as f:
         full_content = f.read()
 
-    # REEMPLAZO QUIRÚRGICO (Solo lo que hay entre las marcas)
-    start_tag = ""
-    end_tag = ""
+    start_tag = "<!-- START_PROJECTS -->"
+    end_tag = "<!-- END_PROJECTS -->"
     
     if start_tag not in full_content or end_tag not in full_content:
         print("❌ No se encontraron las marcas.")
