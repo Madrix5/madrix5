@@ -53,6 +53,7 @@
 <!-- START_PROJECTS -->
 | 📂 Project | 📝 Description | 🛠️ Tech Stack |
 | :--- | :--- | :--- |
+| **[OrderAnalyst](https://github.com/Madrix5/OrderAnalyst)** | Analista de algoritmos de ordenación | ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) |
 | **[libft](https://github.com/Madrix5/libft)** | Creando una libreria en C con funcion de la libc. Me servirá para poder utilizar las funciones a lo largo del cursus. | ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) |
 | **[ft_printf](https://github.com/Madrix5/ft_printf)** | En construcción | ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) |
 | **[get_next_line](https://github.com/Madrix5/get_next_line)** | En construcción | ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) |
